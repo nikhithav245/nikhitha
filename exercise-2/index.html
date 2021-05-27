@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+      <title>Todo list App</title>
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="execrise2.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Task Tracker</h1>
+    </header>
+    <body>
+      <form class="insert" onsubmit="insert()">
+        <h1>new task</h1>
+        <input class="name" placeholder="name">
+        <input type="checkbox" checked="true" class="status">
+        <button>add</button>
+      </form>
+      <form class="edit" onsubmit="update()">
+        <h1>edit task</h1>
+        <input class="id" type="hidden">
+        <input class="name" placeholder="name">
+        <input type="checkbox"   class="status">
+        <button>add</button>
+      </form>
+    
+      <div class="table">
+        <h1>no tasks till now</h1>
+      </div>
+    </body>
+  
+  <script src="js/app.js"></script>
+</html>

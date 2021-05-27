@@ -1,0 +1,66 @@
+body
+{
+	background: whitesmoke;
+	font-family: arial;
+	padding: 5%;
+}
+
+input,button
+{
+	padding: 10px;
+	border:0;
+}
+
+table
+{
+	width: 100%;
+	background: white;
+	text-align:center;
+	
+}
+table thead
+{
+	background: black;
+	color:white;
+}
+table thead th
+{
+	background: #333;
+	color:white;
+	position: sticky;
+	top:0;
+}
+
+form
+{
+	border:2px solid white;
+	padding: 2%;
+	background: white;
+}
+form input
+{
+	border-bottom: 1px solid #000;
+}
+form button
+{
+	background: black;
+	color:white;
+}
+
+
+.edit-btn
+{
+	background: white(26, 25, 24);
+	color:black;
+}
+.delete-btn
+{
+	background: white(25, 24, 26, 0.144);
+	color:black;
+}
+
+@media (max-width:375px)
+{
+	form,input,button{width:100% !important;margin:5px auto !important;display: block !important;}
+	
+}

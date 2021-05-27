@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   </head>
+    <body>
+        <div id="my-container" >
+        
+        <script id="info-template" type="text/x-handlebars-template">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>avatar</th>
+                    <th>createdAt</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <ul>
+                    {{#each this}}
+                   <tr>
+                   <td>{{id }} </td>
+                   <td>{{name}}</td>
+                   <td>{{avatar}}</td>
+                   <td>{{createdAt}}</td>
+                </tr>
+                {{/each}}
+            </ul>
+                </tbody>
+            </table>
+        </script>
+    </div>
+        <!--Handlebar templates end-->
+        <script src="lib/handlebars.js"></script>
+        <script src="lib/jquery-1.10.2.min.js"></script>
+        <script src="data.js"></script>
+        <script src="test.js"></script>
+    </body>
+</html>
